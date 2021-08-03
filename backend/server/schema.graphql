@@ -1,0 +1,5 @@
+#import User from "./generated/prisma-schema.graphql"
+
+type Query {
+  users: [User!]!
+}

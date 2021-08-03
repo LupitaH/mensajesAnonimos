@@ -1,0 +1,32 @@
+mutation {
+  user1: createUser(data: { user: "User 1", password: "12345" }) {
+    id
+  }
+  user2: createUser(data: { user: "User 2", password: "12345" }) {
+    id
+  }
+  user3: createUser(data: { user: "User 3", password: "12345" }) {
+    id
+  }
+  message1: createMessage(
+    data: { user: "61083561e03dd80009fcb0bc", message: "Estoy orgullosa de ti" }
+  ) {
+    id
+  }
+  message2: createMessage(
+    data: {
+      user: "61083561e03dd80009fcb0bc"
+      message: "Hola, si estás leyendo esto te deseo que tengas un buen día"
+    }
+  ) {
+    id
+  }
+  message3: createMessage(
+    data: {
+      user: "61083561e03dd80009fcb0bc"
+      message: "Cause we don't need permission to danceeee!!!"
+    }
+  ) {
+    id
+  }
+}

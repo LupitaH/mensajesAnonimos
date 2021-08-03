@@ -1,0 +1,8 @@
+type User implements Model {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+  user: String! @unique
+  password: String!
+  #message: [Message!]! @relation(link: INLINE)
+}
