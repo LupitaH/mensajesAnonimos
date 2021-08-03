@@ -1,5 +1,24 @@
-#import User from "./generated/prisma-schema.graphql"
+type User {
+  id: ID!
+  user: String
+  password: String!
+}
+
+type Message {
+  id: ID!
+  user: String
+  message: String!
+}
 
 type Query {
-  users: [User!]!
+  users(user: String, password: String): [User]
+  messages(user: String): [Message]
+  messageRandom: [Message]
+}
+
+type Mutation {
+  createUser(user: String!, password: String!): User
+  createMessage(user: String!, message: String!): Message
+  updateMessage(id: ID!, message: String!): Message
+  deleteMessage(id: ID!): Message
 }
