@@ -6,11 +6,12 @@ const { prisma } = require('./generated/prisma-client')
 const resolvers = require('./resolvers.js')
 
 const server = new ApolloServer({
-  typeDefs:fs.readFileSync( 
-    path.join(__dirname, 'schema.graphql'), 'utf8') ,
+  typeDefs: fs.readFileSync(
+    path.join(__dirname, 'schema.graphql'), 'utf8'),
   resolvers,
   context: ({ req }) => {
-    return {...req, prisma}}
+    return { ...req, prisma }
+  }
 });
 
 server.listen().then(({ url }) =>

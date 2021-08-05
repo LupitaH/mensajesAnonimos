@@ -1,17 +1,18 @@
 type User {
-  id: ID!
+  id: ID
   user: String
-  password: String!
+  password: String
 }
 
 type Message {
-  id: ID!
+  id: ID
   user: String
-  message: String!
+  message: String
 }
 
 type Query {
-  users(user: String, password: String): [User]
+  users: [User]
+  userLogin(user: String!, password: String!): [User]
   messages(user: String): [Message]
   messageRandom: [Message]
 }
