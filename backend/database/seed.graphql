@@ -1,0 +1,94 @@
+mutation {
+  user1: createUser(data: { id: "610c2d94e03dd800093190d7" user: "usuarioPrueba", password: "$2a$10$iVjNn.3SUdUnd5PiyaG2AOovESxGA1a9gSHX38nb/xKlLnjP2L/CW" }) {
+    id
+  }
+  user2: createUser(data: { id: "610c2f49e03dd800093190db" user: "user", password: "$2a$10$C5O/UpSPva3Qo/qd5b4RhOr.lXrtYtCSjY3GwFBISjIbTY2n6qBNu" }) {
+    id
+  }
+  message1: createMessage(
+    data: { user: "610c2f49e03dd800093190db", message: "¡¡HOLA!! :)" }
+  ) {
+    id
+  }
+  message2: createMessage(
+    data: {
+      user: "610c2d94e03dd800093190d7"
+      message: "Hola Mundo!!! XD"
+    }
+  ) {
+    id
+  }
+  message3: createMessage(
+    data: {
+      user: "610c2d94e03dd800093190d7"
+      message: "Ten un lindo día :3"
+    }
+  ) {
+    id
+  }
+  message4: createMessage(
+    data: {
+      user: "610c2f49e03dd800093190db"
+      message: "Mis hermanos se pusieron a pelear y les puse la música épica de Naruto de fondo para hacer el ambiente mas dramático Cuando se terminó la música ellos dejaron de pelear y me dijeron -Pon la de Dragon Ball- y siguieron peleando"
+    }
+  ) {
+    id
+  }
+  message5: createMessage(
+    data: {
+      user: "610c2f49e03dd800093190db"
+      message: "¿Por qué los elefantes le tienen miedo a las computadoras?........Por el mouse."
+    }
+  ) {
+    id
+  }
+  message6: createMessage(
+    data: {
+      user: "610c2f49e03dd800093190db"
+      message: "Esa galletita que mojas en el café y cuando estás a punto de llevártela a la boca, se rompe, cae en la taza y te salpica, dejándote con la boca abierta y la cara de idiota. Esa galleta es la vida."
+    }
+  ) {
+    id
+  }
+  message7: createMessage(
+    data: {
+      user: "610c2f49e03dd800093190db"
+      message: "Confieso que las canciones de My Little Pony me curan el alma, puede que sean muy infantiles, pero las letras para mi dicen mucho, me llegan mucho y me dan una enseñanza"
+    }
+  ) {
+    id
+  }
+  message8: createMessage(
+    data: {
+      user: "610c2f49e03dd800093190db"
+      message: "SABIAS QUE: El polvo que vemos frente al resplandor que entra por la ventana, así como el que se acumula en el suelo o sobre los muebles, está compuesto en un 90% por células muertas de nuestro cuerpo."
+    }
+  ) {
+    id
+  }
+  message9: createMessage(
+    data: {
+      user: "610c2f49e03dd800093190db"
+      message: "Datos Random: Un oso panda puede pasar hasta 12 horas al día comiendo!!!! y yo creí que era glotón :O"
+    }
+  ) {
+    id
+  }
+  message10: createMessage(
+    data: {
+      user: "610c2f49e03dd800093190db"
+      message: "Paso por aquí para decirte HOLAAAAAA!!!"
+    }
+  ) {
+    id
+  }
+  message11: createMessage(
+    data: {
+      user: "610c2f49e03dd800093190db"
+      message: "El día de hoy te quiero contar un chisme... es buenísimo :P Así que lee hasta el final. Ayer me levanté más temprano de lo normal, y me disponía a desayunar, pero no tenía leche, así que salí a la tienda y adivina que???????............ nos vemos en el siguiente mensaje :D"
+      
+    }
+  ) {
+    id
+  }
+}

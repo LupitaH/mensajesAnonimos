@@ -1,0 +1,7 @@
+type Message implements Model {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+  user: String!
+  message: String! 
+}
